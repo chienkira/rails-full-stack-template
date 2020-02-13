@@ -1,0 +1,1 @@
+# rails-full-stack-template
