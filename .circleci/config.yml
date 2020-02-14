@@ -12,7 +12,7 @@ jobs:
             - bundle-{{ checksum "Gemfile.lock" }}
       - run:
           name: bundle-install
-          command: ./bin/bundle install --path=vendor/bundle
+          command: bundle install --path=vendor/bundle
       - save_cache:
           name: store-bundle-cache
           key: bundle-{{ checksum "Gemfile.lock" }}
@@ -23,7 +23,7 @@ jobs:
           command: ./bin/rails db:create db:schema:load
       - run:
           name: rubocop
-          command: ./bin/bundle exec rubocop
+          command: bundle exec rubocop
 
 workflows:
   version: 2.1
