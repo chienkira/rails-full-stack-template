@@ -28,7 +28,7 @@ services:
       - 3000:3000
 
   db:
-    image: mysql:8.0
+    image: mysql:5.7
     ports:
       - 3010:3306
     volumes:

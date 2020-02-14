@@ -7,9 +7,9 @@ jobs:
         environment:
           RAILS_ENV: test
           TZ: /usr/share/zoneinfo/Asia/Tokyo
-          DB_HOST: localhost
+          DB_HOST: 127.0.0.1
 
-      - image: mysql:8.0
+      - image: mysql:5.7
         environment:
           MYSQL_USER: root
           MYSQL_ALLOW_EMPTY_PASSWORD: 1
