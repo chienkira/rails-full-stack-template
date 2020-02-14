@@ -34,7 +34,7 @@ jobs:
             - vendor/bundle
       - run:
           name: db:migrate
-          command: ./bin/rails db:create db:schema:load
+          command: ./bin/rails db:create db:migrate
       - run:
           name: rubocop
           command: bundle exec rubocop
