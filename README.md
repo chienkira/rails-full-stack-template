@@ -16,7 +16,7 @@
 
 ## Devops
 
-- [ ] CI by [CircleCI](https://circleci.com/)
+- [x] CI by [CircleCI](https://circleci.com/)
 - [ ] Infra as code by [Terraform](http://terraform.io/)
 - [ ] Deployment automation by [Capistrano](https://capistranorb.com/)
 - [ ] Server provisioning by [To be determined](#)
