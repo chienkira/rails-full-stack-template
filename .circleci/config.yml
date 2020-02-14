@@ -7,7 +7,8 @@ jobs:
         environment:
           RAILS_ENV: test
           TZ: /usr/share/zoneinfo/Asia/Tokyo
-          DATABASE_URL: mysql2://root@127.0.0.1:3306
+          DATABASE_URL: mysql2://root@localhost:3306
+
       - image: mysql:8.0
         environment:
           MYSQL_USER: root
@@ -15,6 +16,7 @@ jobs:
           MYSQL_CHARSET: utf8mb4
           MYSQL_COLLATION: utf8mb4_general_ci
           MYSQL_INNODB_LARGE_PREFIX: 1
+
     steps:
       - checkout
       - restore_cache:
