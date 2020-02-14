@@ -1,12 +1,10 @@
 version: 2.1
-orbs:
-  ruby: circleci/ruby@0.1.2 
 
 jobs:
   build:
     docker:
       - image: circleci/ruby:2.6-stretch-node
-    executor: default
+    working_directory: /app
     steps:
       - checkout
       - restore_cache:
