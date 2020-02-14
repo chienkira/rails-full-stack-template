@@ -33,3 +33,7 @@ $ docker/rails-console  # to get into rails console
 $ docker/bash           # to start new bash session inside web container
 ```
 
+## Issues
+
+- Run `rails webpacker:install` if get webpack error 
+for the first time open on browser
