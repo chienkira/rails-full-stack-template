@@ -31,5 +31,14 @@ module App
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Logging
+    config.lograge.enabled = true
+
+    # Error tracking
+    ENV['SENTRY_DSN'].present? && Raven.configure do |config|
+      config.sanitize_fields = Rails.application.config.filter_parameters.map(&:to_s)
+      config.dsn = ENV['SENTRY_DSN']
+    end
   end
 end
