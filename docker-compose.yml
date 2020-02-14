@@ -9,7 +9,7 @@ services:
       - .:/app
       - ${HOME}/.aws:/root/.aws
       - data-bundle:/usr/local/bundle
-    links:
+    depends_on:
       - db
       - redis
     tty: true
@@ -34,6 +34,7 @@ services:
     volumes:
       - data-db:/var/lib/mysql
     environment:
+      MYSQL_USER: root
       MYSQL_ALLOW_EMPTY_PASSWORD: 1
       MYSQL_CHARSET: utf8mb4
       MYSQL_COLLATION: utf8mb4_general_ci

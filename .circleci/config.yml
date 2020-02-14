@@ -38,6 +38,9 @@ jobs:
       - run:
           name: rubocop
           command: bundle exec rubocop
+      - run:
+          name: rspec
+          command: bundle exec rspec
 
 workflows:
   version: 2.1
