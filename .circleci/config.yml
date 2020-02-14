@@ -1,0 +1,41 @@
+version: 2.1
+orbs:
+  ruby: circleci/ruby@0.1.2 
+
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.6-stretch-node
+    executor: default
+    steps:
+      - checkout
+      - restore_cache:
+          name: restore-bundle-cache
+          keys:
+            - bundle-{{ checksum "Gemfile.lock" }}
+      - run:
+          name: bundle-install
+          command: ./bin/bundle install --path=vendor/bundle
+      - save_cache:
+          name: store-bundle-cache
+          key: bundle-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+      - run:
+          name: db:migrate
+          command: ./bin/rails db:create db:schema:load
+      - run:
+          name: rubocop
+          command: ./bin/bundle exec rubocop
+
+workflows:
+  version: 2.1
+  run_build:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - master
+                - develop
+                - /feature\/.*/
