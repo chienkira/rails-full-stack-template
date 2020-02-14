@@ -4,16 +4,16 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.6.0-stretch-node
-          environment:
-            RAILS_ENV: test
-            TZ: /usr/share/zoneinfo/Asia/Tokyo
+        environment:
+          RAILS_ENV: test
+          TZ: /usr/share/zoneinfo/Asia/Tokyo
       - image: mysql:8.0
-          environment:
-            MYSQL_USER: root
-            MYSQL_ALLOW_EMPTY_PASSWORD: 1
-            MYSQL_CHARSET: utf8mb4
-            MYSQL_COLLATION: utf8mb4_general_ci
-            MYSQL_INNODB_LARGE_PREFIX: 1
+        environment:
+          MYSQL_USER: root
+          MYSQL_ALLOW_EMPTY_PASSWORD: 1
+          MYSQL_CHARSET: utf8mb4
+          MYSQL_COLLATION: utf8mb4_general_ci
+          MYSQL_INNODB_LARGE_PREFIX: 1
     steps:
       - checkout
       - restore_cache:
