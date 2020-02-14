@@ -4,7 +4,6 @@ jobs:
   build:
     docker:
       - image: circleci/ruby:2.6-stretch-node
-    working_directory: /app
     steps:
       - checkout
       - restore_cache:
