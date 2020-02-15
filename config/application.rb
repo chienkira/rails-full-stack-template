@@ -32,6 +32,12 @@ module App
     # Don't generate system test files.
     config.generators.system_tests = nil
 
+    # Web console
+    if Rails.env.development?
+      config.web_console.whitelisted_ips = '0.0.0.0/0'
+      config.web_console.whiny_requests = false
+    end
+
     # Logging
     config.lograge.enabled = true
 
