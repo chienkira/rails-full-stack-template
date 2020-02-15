@@ -9,6 +9,6 @@ RUN apk --update --no-cache add build-base alpine-sdk tzdata \
 
 # Upgrade to newer nodejs
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/main" >> /etc/apk/repositories && \
-    apk upgrade nodejs
+    apk upgrade nodejs yarn
 
 WORKDIR /app
