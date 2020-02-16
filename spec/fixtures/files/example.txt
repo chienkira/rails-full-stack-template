@@ -1,0 +1,19 @@
+HTTP/1.1 200 OK
+Date: Sun, 16 Feb 2020 14:09:45 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 170
+Connection: keep-alive
+Set-Cookie: __cfduid=decfbbe2422cbd256b172afd3b23071e71581862185; expires=Tue, 17-Mar-20 14:09:45 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+Etag: W/"aa-yZW/45DWGt/1ri05OLnMt/FJ3RY"
+Via: 1.1 vegur
+Cache-Control: max-age=14400
+CF-Cache-Status: HIT
+Age: 4385
+Accept-Ranges: bytes
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+CF-RAY: 566019e16f70f8d7-NRT
+
+{"data":{"id":2,"nationality":"Japanese","first_name":"Janet","last_name":"Weaver","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"}}

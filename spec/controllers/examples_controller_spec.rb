@@ -16,6 +16,11 @@ RSpec.describe ExamplesController, type: :controller do
       get :index, params: {}
       expect(response).to be_successful
     end
+
+    it 'renders proper template' do
+      get :index, params: {}
+      expect(response).to render_template 'examples/index'
+    end
   end
 
   describe 'GET #new' do
