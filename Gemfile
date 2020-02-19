@@ -21,6 +21,9 @@ gem 'lograge'
 gem 'sentry-raven'
 # Load environment variables from .env
 gem 'dotenv-rails'
+# Background job
+gem 'sidekiq'
+gem 'sidekiq-cron'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false

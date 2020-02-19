@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
   resources :examples
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  # Sidekiq Monitoring web ui
+  mount Sidekiq::Web => '/sidekiq'
 end

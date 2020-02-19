@@ -12,7 +12,7 @@
 - [x] [Rubocop](https://github.com/rubocop-hq/rubocop) (Code formatter/checker)
 - [x] [Rspec](https://rspec.info/) (Test)
 - [x] Local development with [Docker](https://www.docker.com/)
-- [ ] [Sidekiq](https://github.com/mperham/sidekiq) (Background job processing)
+- [x] [Sidekiq](https://github.com/mperham/sidekiq) (Background job processing)
 
 ## Devops
 

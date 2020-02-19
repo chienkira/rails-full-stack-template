@@ -32,6 +32,9 @@ module App
     # Don't generate system test files.
     config.generators.system_tests = nil
 
+    # Active Job adapter
+    config.active_job.queue_adapter = :sidekiq
+
     # Web console
     if Rails.env.development?
       config.web_console.whitelisted_ips = '0.0.0.0/0'
