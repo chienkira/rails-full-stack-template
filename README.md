@@ -29,7 +29,7 @@
 $ docker-compose build  # to build images at the first time
 $ docker/start          # to start local development env
 $ docker/stop           # to stop local development env
-$ docker/rails-console  # to get into rails console
+$ docker/sidekiq        # start sidekiq
 $ docker/bash           # to start new bash session inside web container
 ```
 
