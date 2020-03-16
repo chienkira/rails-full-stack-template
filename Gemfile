@@ -23,6 +23,9 @@ gem 'sentry-raven'
 gem 'dotenv-rails'
 # Encrypt/decrypt/edit your rails Dotenv files
 gem 'dotenv_sekrets'
+# Background job
+gem 'sidekiq'
+gem 'sidekiq-cron'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
