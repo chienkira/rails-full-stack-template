@@ -8,7 +8,7 @@ gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 # Use mysql as the database for Active Record
 gem 'mysql2', '>= 0.4.4'
 # Use Puma as the app server
-gem 'puma', '~> 4.1'
+gem 'puma', '~> 4.3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -19,8 +19,10 @@ gem 'jbuilder', '~> 2.7'
 gem 'lograge'
 # Error tracking
 gem 'sentry-raven'
-# Load environment variables from .env
+# Load environment variables from Dotenv files
 gem 'dotenv-rails'
+# Encrypt/decrypt/edit your rails Dotenv files
+gem 'dotenv_sekrets'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false

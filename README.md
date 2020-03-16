@@ -13,6 +13,7 @@
 - [x] [Rspec](https://rspec.info/) (Test)
 - [x] Local development with [Docker](https://www.docker.com/)
 - [ ] [Sidekiq](https://github.com/mperham/sidekiq) (Background job processing)
+- [x] Encrypted dotenv file with [dotenv_sekrets](https://github.com/mikamai/dotenv_sekrets)
 
 ## Devops
 
