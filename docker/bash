@@ -1,4 +1,4 @@
 #!/bin/sh
 
 cd `dirname $0`
-docker-compose run --rm web sh $@
+docker-compose exec web /bin/sh $@

@@ -30,6 +30,5 @@
 yarn-debug.log*
 .yarn-integrity
 
-.env
 .sekrets.key
 .idea/*

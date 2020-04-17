@@ -1,4 +1,4 @@
 #!/bin/sh
 
 cd `dirname $0`
-docker-compose run --rm web bundle exec sidekiq
+docker-compose exec web bundle exec sidekiq

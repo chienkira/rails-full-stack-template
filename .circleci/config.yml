@@ -4,7 +4,7 @@ jobs:
   build:
     working_directory: ~/app
     docker:
-      - image: circleci/ruby:2.6.0-stretch-node
+      - image: circleci/ruby:2.6.6-node
         environment:
           RAILS_ENV: test
           TZ: /usr/share/zoneinfo/Asia/Tokyo

@@ -14,6 +14,7 @@
 - [x] Local development with [Docker](https://www.docker.com/)
 - [x] [Sidekiq](https://github.com/mperham/sidekiq) (Background job processing)
 - [x] Encrypted dotenv file with [dotenv_sekrets](https://github.com/mikamai/dotenv_sekrets)
+- [x] Parsable log with [lograge](https://github.com/roidrage/lograge)
 
 ## Devops
 
@@ -30,10 +31,10 @@
 $ docker-compose build  # to build images at the first time
 $ docker/start          # to start local development env
 $ docker/stop           # to stop local development env
-$ docker/sidekiq        # start sidekiq
-$ docker/bash           # to start new bash session inside web container
+$ docker/sidekiq        # to start sidekiq (async job)
+$ docker/bash           # to start new bash session
 ```
 
 ## Notices
 
-- Need to run `yarn install --check-files` to make yarn and webpack work for the first time
+- Need to run `docker-compose run --rm web yarn install --check-files` to make yarn and webpack work for the first time
