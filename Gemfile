@@ -18,8 +18,6 @@ gem 'jbuilder', '~> 2.7'
 # Logging
 gem 'lograge'
 gem 'logstash-event'
-# Error tracking
-gem 'sentry-raven'
 # Load environment variables from Dotenv files
 gem 'dotenv-rails'
 # Encrypt/decrypt/edit your rails Dotenv files
@@ -27,9 +25,20 @@ gem 'dotenv_sekrets'
 # Background job
 gem 'sidekiq'
 gem 'sidekiq-cron'
+# More readable enumerated attributes
+gem 'enumerize'
+# SEO-friendly meta tags
+gem 'meta-tags'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+
+group :production do
+  # Error tracking
+  gem 'sentry-raven'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -43,6 +52,8 @@ group :development, :test do
   gem 'rspec-rails', '>= 4.0.0.beta4'
   gem 'shoulda-matchers'
   gem 'webmock'
+  # Pretty prints Ruby objects
+  gem 'awesome_print'
 end
 
 group :development do
@@ -56,9 +67,6 @@ group :development do
   gem 'rubocop', require: false
   gem 'rubocop-rails', require: false
   gem 'rubocop-rspec', require: false
-  # Pretty prints Ruby objects
-  gem 'awesome_print'
+  # Help to kill N+1 queries
+  gem 'bullet'
 end
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]

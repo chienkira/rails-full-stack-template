@@ -15,6 +15,8 @@
 - [x] [Sidekiq](https://github.com/mperham/sidekiq) (Background job processing)
 - [x] Encrypted dotenv file with [dotenv_sekrets](https://github.com/mikamai/dotenv_sekrets)
 - [x] Parsable log with [lograge](https://github.com/roidrage/lograge)
+- [x] Error tracking with [sentry](https://sentry.io)
+- [x] And many tweaks (Enumerize, Meta-tags, Bullet, Awesome-print...) 
 
 ## Devops
 

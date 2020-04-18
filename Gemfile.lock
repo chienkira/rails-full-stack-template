@@ -65,6 +65,9 @@ GEM
     bootsnap (1.4.6)
       msgpack (~> 1.0)
     builder (3.2.4)
+    bullet (6.1.0)
+      activesupport (>= 3.0.0)
+      uniform_notifier (~> 1.11)
     byebug (11.1.1)
     chronic (0.10.2)
     coerce (0.0.8)
@@ -85,6 +88,8 @@ GEM
       dotenv-rails (>= 2.1.1)
       rails
       sekrets (>= 1.10.0)
+    enumerize (2.3.1)
+      activesupport (>= 3.2)
     erubi (1.9.0)
     et-orbi (1.2.4)
       tzinfo
@@ -136,6 +141,8 @@ GEM
     map (6.6.0)
     marcel (0.3.3)
       mimemagic (~> 0.3.2)
+    meta-tags (2.13.0)
+      actionpack (>= 3.2.0, < 6.1)
     method_source (1.0.0)
     mimemagic (0.3.4)
     mini_mime (1.0.2)
@@ -279,6 +286,7 @@ GEM
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
     unicode-display_width (1.7.0)
+    uniform_notifier (1.13.0)
     web-console (4.0.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -303,10 +311,12 @@ PLATFORMS
 DEPENDENCIES
   awesome_print
   bootsnap (>= 1.4.2)
+  bullet
   byebug
   database_cleaner
   dotenv-rails
   dotenv_sekrets
+  enumerize
   factory_bot_rails
   faker
   faker_japanese
@@ -314,6 +324,7 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   lograge
   logstash-event
+  meta-tags
   mysql2 (>= 0.4.4)
   puma (~> 4.3.3)
   rails (~> 6.0.2, >= 6.0.2.1)

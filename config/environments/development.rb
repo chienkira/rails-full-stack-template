@@ -63,4 +63,11 @@ Rails.application.configure do
   # Clear logs
   Rails.application.load_tasks
   Rake::Task['log:clear'].invoke
+
+  # Bullet
+  config.after_initialize do
+    Bullet.enable = true
+    Bullet.console = true # ブラウザのコンソールログに記録
+    Bullet.rails_logger = true # Railsログに出力
+  end
 end
