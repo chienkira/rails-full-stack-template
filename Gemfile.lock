@@ -158,7 +158,7 @@ GEM
     parser (2.7.1.1)
       ast (~> 2.4.0)
     public_suffix (4.0.4)
-    puma (4.3.3)
+    puma (4.3.5)
       nio4r (~> 2.0)
     raabro (1.1.6)
     rack (2.2.2)
@@ -326,7 +326,7 @@ DEPENDENCIES
   logstash-event
   meta-tags
   mysql2 (>= 0.4.4)
-  puma (~> 4.3.3)
+  puma (~> 4.3.5)
   rails (~> 6.0.2, >= 6.0.2.1)
   rails-controller-testing
   rspec-rails (>= 4.0.0.beta4)
